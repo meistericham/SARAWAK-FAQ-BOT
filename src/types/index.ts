@@ -28,9 +28,18 @@ export interface FAQ {
   id: string;
   question: string;
   answer: string;
+  category?: string;
+  is_active?: boolean;
   created_at: string;
   updated_at: string;
   created_by: string;
+  updated_by?: string;
+  created_by_profile?: {
+    full_name: string;
+  };
+  updated_by_profile?: {
+    full_name: string;
+  };
 }
 
 export interface Lead {
