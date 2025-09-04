@@ -41,15 +41,6 @@ export function Navigation({ onChatbotClick, onDashboardClick, userRole }: Navig
         </button>
         
         <button
-          onClick={onChatbotClick}
-          className="p-2 text-gray-600 hover:bg-gray-50 rounded-lg transition-colors duration-200 flex items-center space-x-1"
-          title="Tourism Chatbot"
-        >
-          <MessageCircle size={20} />
-          <span className="hidden sm:inline text-sm">Chatbot</span>
-        </button>
-        
-        <button
           onClick={onDashboardClick}
           className="p-2 text-gray-600 hover:bg-gray-50 rounded-lg transition-colors duration-200 flex items-center space-x-1"
           title={userRole === 'ADMIN' ? 'Admin Dashboard' : 'User Dashboard'}
