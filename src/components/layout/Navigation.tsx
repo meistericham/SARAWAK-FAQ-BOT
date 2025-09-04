@@ -1,5 +1,5 @@
 import React from 'react';
-import { Settings, LogOut, Crown, User, MessageCircle } from 'lucide-react';
+import { Settings, LogOut, Crown, User } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 
 interface NavigationProps {
@@ -31,15 +31,6 @@ export function Navigation({ onChatbotClick, onDashboardClick, userRole }: Navig
       </div>
       
       <div className="flex items-center space-x-2">
-        <button
-          onClick={onChatbotClick}
-          className="p-2 text-gray-600 hover:bg-gray-50 rounded-lg transition-colors duration-200 flex items-center space-x-1"
-          title="Tourism Chatbot"
-        >
-          <MessageCircle size={20} />
-          <span className="hidden sm:inline text-sm">Chatbot</span>
-        </button>
-        
         <button
           onClick={onDashboardClick}
           className="p-2 text-gray-600 hover:bg-gray-50 rounded-lg transition-colors duration-200 flex items-center space-x-1"
